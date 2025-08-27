@@ -18,7 +18,10 @@ namespace _02_labexer_1
         {
             InitializeComponent();
 
-            cashier = new CashierClass();   
+            cashier = new CashierClass();
+
+            CustomerView customerForm = new CustomerView();
+            customerForm.Show();
         }
         public class CashierClass
         {

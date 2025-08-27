@@ -102,6 +102,7 @@
             this.Controls.Add(this.btnCashier);
             this.Name = "QueuingForm";
             this.Text = "Queuing Form";
+//            this.Load += new System.EventHandler(this.QueuingForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

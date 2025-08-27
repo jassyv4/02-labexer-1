@@ -27,7 +27,7 @@ namespace _02_labexer_1
         {
             if (CashierClass.CashierQueue.Count > 0)
             {
-                lblQueueNum.Text = "P - " + CashierClass.CashierQueue.Peek();
+                lblQueueNum.Text = CashierClass.CashierQueue.Peek();
             }
             else
             {

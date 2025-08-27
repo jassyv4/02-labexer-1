@@ -48,5 +48,12 @@ namespace _02_labexer_1
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CashierWindowQueueForm cashierWindow = new CashierWindowQueueForm();
+            cashierWindow.DisplayCashierQueue(CashierClass.CashierQueue);
+
+            cashierWindow.Show();
+        }
     }
 }

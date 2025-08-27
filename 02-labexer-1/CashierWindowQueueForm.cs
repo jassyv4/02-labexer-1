@@ -14,19 +14,23 @@ namespace _02_labexer_1
 {
     public partial class CashierWindowQueueForm : Form
     {
+        private Timer timer;
+
         public CashierWindowQueueForm()
         {
             InitializeComponent();
+
+            timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += new EventHandler(timer1_Tick);
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             DisplayCashierQueue(CashierClass.CashierQueue);
-
         }
 
-
-            public void DisplayCashierQueue(IEnumerable CashierList)
+             public void DisplayCashierQueue(IEnumerable CashierList)
         {
             listCashierQueue.Items.Clear();
             foreach (Object obj in CashierList)
@@ -47,8 +51,12 @@ namespace _02_labexer_1
                 MessageBox.Show("No more students in queue!");
             }
 
-            // Refresh the display after dequeue
+            timer.Start();
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
             DisplayCashierQueue(CashierClass.CashierQueue);
+            timer.Stop();
         }
     }
 

@@ -19,7 +19,7 @@ namespace _02_labexer_1
             InitializeComponent();
 
             timer = new Timer();
-            timer.Interval = 1000; // 1 second
+            timer.Interval = 1000;
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
         }

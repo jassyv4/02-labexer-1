@@ -81,11 +81,11 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(45, 213);
+            this.button1.Location = new System.Drawing.Point(45, 210);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 26);
             this.button1.TabIndex = 5;
-            this.button1.Text = "View Queue";
+            this.button1.Text = "View List";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
